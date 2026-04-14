@@ -7,16 +7,32 @@
         <style>
             body {
                 font-family: Helvetica, Arial, sans-serif;
+				color:pink;
             }
-			td{
-			border:1px solid black;
-			padding:1rem
+			table{
+			  border-collapse: collapse;
+			  text-align: left;
+			 }
+			 
+			td,th{
+			border:1px solid pink;
+			padding:1rem;
 			}
+			
         </style>
     </head>
     <body>
-        <h1>Hola mundo</h1>
-		<table></table>
+        <h1>ദ്ദി◝ ⩊ ◜.ᐟ</h1>
+		<table>
+		<thead>
+		   <tr>
+		       <th>Asignatura</th>
+			   <th>Grupo</th>
+			   <th>Enfoque</th>
+			</tr>
+		</thead>
+		<tbody></body>
+		</table>
         <ol id="estudiantes"></ol>
 
         <script>
@@ -35,7 +51,7 @@ fetch(URL)
         console.log("Datos recibidos:", trabajo);
         trabajo.forEach((x) => {
             if (x.ok == 1){
-                t.innerHTML += `<tr><td>${x.name}</td><td>${x.group}</td><td>${x.level}</td><td>${x.focus}</td></tr>`;
+                t.innerHTML += `<tr><td>${x.name}</td><td>${x.group}</td><td>${x.focus}</td></tr>`;
             }
         });
     })
